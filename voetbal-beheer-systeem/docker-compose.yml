@@ -1,0 +1,35 @@
+version: '3'
+services:
+  ledenservice:
+    build: ./ledenservice
+    ports:
+      - "8081:8081"
+    depends_on:
+      - mongodb
+
+  teamservice:
+    build: ./teamservice
+    ports:
+      - "8082:8082"
+    depends_on:
+      - sql_db
+
+  wedstrijdservice:
+    build: ./wedstrijdservice
+    ports:
+      - "8083:8083"
+    depends_on:
+      - sql_db
+
+  mongodb:
+    image: mongo
+    ports:
+      - "27017:27017"
+
+  sql_db:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: voetbalclub
+    ports:
+      - "3306:3306"
