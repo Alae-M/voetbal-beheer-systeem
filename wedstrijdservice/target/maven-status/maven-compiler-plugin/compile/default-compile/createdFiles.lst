@@ -1,0 +1,5 @@
+com\example\wedstrijdservice\models\Wedstrijd.class
+com\example\wedstrijdservice\WedstrijdserviceApplication.class
+com\example\wedstrijdservice\services\WedstrijdService.class
+com\example\wedstrijdservice\controllers\WedstrijdController.class
+com\example\wedstrijdservice\repositories\WedstrijdRepository.class
