@@ -1,0 +1,5 @@
+com\example\teamservice\models\Team.class
+com\example\teamservice\TeamserviceApplication.class
+com\example\teamservice\services\TeamService.class
+com\example\teamservice\repositories\TeamRepository.class
+com\example\teamservice\controllers\TeamController.class
